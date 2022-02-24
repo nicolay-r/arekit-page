@@ -71,6 +71,21 @@
                 width: 100%;
             }
         }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
     </style>
 
 	<link rel="stylesheet" href="./website/data/font-awesome.min.css">
@@ -84,7 +99,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <img src="./website/data/logo.png">
+                        <div class="imgbox">
+                            <img class="center-fit" src="./website/data/logo.png">
+                        </div>
                         <h2>Document level Attitude and Relation Extraction toolkit</h2>
                         <h4>for mass-media news, analytical articles, large documents, et. al.</h4>
 
